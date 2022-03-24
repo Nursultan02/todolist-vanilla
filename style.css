@@ -1,0 +1,106 @@
+@font-face {
+  font-family: EB Garamond;
+  src: url(./assets/fonts/EBGaramond-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: EB Garamond;
+  src: url(./assets/fonts/EBGaramond-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: EB Garamond;
+  src: url(./assets/fonts/EBGaramond-Bold.ttf);
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  width: 90%;
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li button {
+  width: 70px;
+}
+
+body {
+  font-family: EB Garamond;
+  font-weight: 500;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(69, 253, 211),
+    rgb(255, 78, 29)
+  );
+  background: -moz-linear-gradient(45deg, rgb(69, 253, 211), rgb(255, 78, 29));
+  background: linear-gradient(45deg, rgb(69, 253, 211), rgb(255, 78, 29));
+}
+
+.todo-list {
+  width: 600px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.todo-list-input {
+  width: 90%;
+  height: 40px;
+  font-size: 22px;
+  border: 0;
+  border-bottom: 4px solid #9b9b9b;
+  outline: none;
+  padding-left: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  transition: border-bottom 0.9s ease-in-out;
+}
+
+.todo-list-input:focus {
+  border-bottom: 4px solid #71e64e;
+}
+
+.todo-list-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  color: rgb(184, 184, 184);
+  margin-left: 10px;
+
+  transition: color 0.4s ease-in-out;
+}
+
+.todo-list-button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: EB Garamond;
+  font-weight: 700;
+}
