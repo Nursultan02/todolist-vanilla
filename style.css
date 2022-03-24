@@ -34,10 +34,16 @@ li {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 21px;
+  padding: 7px;
+  border-radius: 10px;
+  text-transform: capitalize;
 }
 
-li button {
-  width: 70px;
+.completed {
+  text-decoration: line-through;
 }
 
 body {
@@ -105,21 +111,37 @@ body {
   cursor: pointer;
 }
 
-.deleteBtn {
+.btn {
   outline: none;
   border: none;
   border-radius: 10px;
   font-size: 15px;
-  background-color: rgb(153, 52, 41);
-  color: #d3c9c9;
-  width: 90px;
   padding: 5px 20px 5px 20px;
+  margin-left: 10px;
 
   transition: all 0.25s ease-in-out;
 }
 
+.deleteBtn {
+  background-color: rgb(153, 52, 41);
+  color: #d3c9c9;
+  width: 90px;
+}
+
 .deleteBtn:hover {
   background-color: rgb(212, 67, 51);
+  color: #fff;
+  font-size: 15.3px;
+}
+
+.completed-btn {
+  background-color: rgb(39, 136, 36);
+  color: #d3c9c9;
+  width: 130px;
+}
+
+.completed-btn:hover {
+  background-color: rgb(64, 194, 59);
   color: #fff;
   font-size: 15.3px;
 }
