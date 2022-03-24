@@ -1,6 +1,7 @@
 const todoInput = document.querySelector('.todo-list-input');
 const todoItems = document.getElementById('todo-list-items');
 const todoListButton = document.querySelector('.todo-list-button');
+const clearBtn = document.querySelector('.clear-btn');
 
 let counter = 0;
 
@@ -13,6 +14,12 @@ todoInput.addEventListener('keydown', (e) => {
 
 // adding element with plus button
 todoListButton.addEventListener('click', () => addItem());
+
+clearBtn.addEventListener('click', () => clearTodo());
+
+const clearTodo = () => {
+  todoItems.innerHTML = '';
+};
 
 const deleteItem = (itemToDelete) => {
   itemToDelete.parentNode.removeChild(itemToDelete);

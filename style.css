@@ -29,7 +29,7 @@ ul {
 }
 
 li {
-  width: 90%;
+  width: 100%;
   margin-top: 10px;
   font-size: 20px;
   display: flex;
@@ -118,6 +118,8 @@ body {
   font-size: 15px;
   padding: 5px 20px 5px 20px;
   margin-left: 10px;
+  cursor: pointer;
+  user-select: none;
 
   transition: all 0.25s ease-in-out;
 }
@@ -144,4 +146,20 @@ body {
   background-color: rgb(64, 194, 59);
   color: #fff;
   font-size: 15.3px;
+}
+
+.clear-btn {
+  font-size: 20px;
+  width: 100px;
+  font-family: EB Garamond;
+  font-weight: 500;
+  padding: 1px 16px;
+
+  background-color: rgb(216, 210, 210);
+  color: rgb(138, 125, 125);
+}
+
+.clear-btn:hover {
+  background-color: #fff;
+  color: rgb(83, 55, 55);
 }
