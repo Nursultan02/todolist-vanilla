@@ -25,6 +25,7 @@
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 li {
@@ -69,7 +70,11 @@ body {
 .todo-list-input {
   width: 90%;
   height: 40px;
-  font-size: 22px;
+
+  font-size: 21px;
+  font-family: EB Garamond;
+  font-weight: 500;
+
   border: 0;
   border-bottom: 4px solid #9b9b9b;
   outline: none;
@@ -100,7 +105,21 @@ body {
   cursor: pointer;
 }
 
-h1 {
-  font-family: EB Garamond;
-  font-weight: 700;
+.deleteBtn {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: rgb(153, 52, 41);
+  color: #d3c9c9;
+  width: 90px;
+  padding: 5px 20px 5px 20px;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(212, 67, 51);
+  color: #fff;
+  font-size: 15.3px;
 }

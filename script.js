@@ -24,22 +24,23 @@ const addItem = () => {
 
     let li = document.createElement('li');
     let p = document.createElement('p');
-
     let button = document.createElement('button');
-    button.innerText = 'delete';
 
+    button.innerText = 'Delete';
     p.innerText = val;
+
     li.appendChild(p);
     li.appendChild(button);
     todoItems.appendChild(li);
 
-    todoInput.value = '';
-
     button.id = counter;
+    button.className = 'deleteBtn';
 
     const deleteBtn = document.getElementById(counter);
 
     deleteBtn.addEventListener('click', (e) => deleteItem(e.target.parentNode));
+
+    todoInput.value = '';
     counter++;
   } else {
     alert('Nothing to add!');
